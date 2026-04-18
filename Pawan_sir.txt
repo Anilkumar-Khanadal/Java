@@ -194,17 +194,23 @@ int a=10;
 int b=20;
 int result = a+b;
 
-+ , = operators
-A, b operands
++,= operators
+a,b operands
 
 Types of Operators
 -----------
-Arithmetic operators + - * / %
-Relational/comparison operators > >= < <= != ==
-Logical operators && || !
-Increment and Decrement Operators ++ –
-Assignment = += -= *= /= %=
-Conditional/ternary operators ?:
+1. Arithmetic operators 
+             + - * / %
+2. Relational/comparison operators 
+             > >= < <= != ==
+3. Logical operators 
+             && || !
+4. Increment and Decrement Operators 
+             ++ --
+5. Assignment 
+             = += -= *= /= %=
+6. Conditional/ternary operators 
+             ?:
 
 Again three divided
 ---------------
@@ -226,12 +232,13 @@ If
 If else
 Nested if else
 Switch case
-
+----------
 if (Condition)
 {
 Statement
 }
 
+-----------------
 if (Condition)
 {
 Statement
@@ -241,7 +248,7 @@ Else
 Statement
 }
 
-If else ladder
+If.....else ladder
 —------------
 if (Condition1)
 {
@@ -256,6 +263,16 @@ else
 {
 }
 
+Switch statement
+---------------
+switch(variable)
+{
+case value1 : statement;
+case value2 : statement;
+case value3 : statememt;
+default : statement;
+}
+
 
 
 Day 5
@@ -266,15 +283,22 @@ While loop
 Do while loop
 For loop
 Enhanced for loop/ For each loop
+
+Looping
 1…..10 numbers
 syso(1)
 syso(2)
 syso(3)
 —-
 syso(10)
+
+Importent in Looping
+-------------
 Initialization (where to start)
 Condition (how many times)
 inc/dec
+
+
 
 While loop
 --------------
@@ -286,15 +310,19 @@ inc/dec;
 }
 
 
+
 Do while loop
 —---------------
 if condition not satisfied at least once round print
 
+Initialization;
 do
 {
 Statements;
 inc/dec
 } while (condition);
+
+
 
 For loop
 ----------
@@ -305,9 +333,10 @@ statements;
 
 Which loop is preferred to use
 ------------------------------------
-If you know the number of iterations in advance, the for loop is often the most suitable
-If you want to execute the loop at least once, the do-while loop is appropriate.
-If you are uncertain about the number of iterations and the loop termination is based on a condition, the while loop is a good choice. 
+1. If you know the number of iterations in advance, the for loop is often the most suitable
+2. If you want to execute the loop at least once, the do-while loop is appropriate.
+3. you are uncertain about the number of iterations and the loop termination is based on a 
+   condition, the while loop is a good choice. 
 
 
 
@@ -330,36 +359,42 @@ Arrays
 ---------
 Array is a collection of elements of the same data type(Homogeneous data).
 We can store multiple values into a single variable.
+
 100 students – ids – 100 variables 
 int a [ ] = new int [100];
 
 Types of arrays
-----------
+---------------
 Single dimensional array
 Two dimensional array/multidimensional array
 
 Single dimensional array
-—-----------
-Declare an array
-Add value into array
-Find size of an array
-Read single value from an array
-Read multiple value from an array
+—-----------------------
+1. Declare an array
+2. Add value into array
+3. Find size of an array
+4. Read single value from an array
+5. Read multiple value from an array
+
+
 Two dimensional array
-----------------------------
-Declare an array
-Add value into array
-Find size of an array
-Read single value from an array
-Read multiple value from an array
+---------------------
+1. Declare an array
+2. Add value into array
+3. Find size of an array
+4. Read single value from an array
+4. Read multiple value from an array
+
+
 Object array
----------------
- Object a[  ]= {100,10.5,'A',"WELCOME",true};
-Object  a allowed all type of data (heterogeneous data)
+------------
+Object a[]= {100,10.5,'A',"WELCOME",true};
+Object /a/ allowed all type of data (heterogeneous data)
+
 
 
 Day 7
--------
+-----
 Ex 1 : Search an element in array (linear search)
 Ex 2 : Find number of repeatations
 Ex 3 : Sorting
