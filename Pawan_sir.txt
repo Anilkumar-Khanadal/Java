@@ -1,0 +1,1756 @@
+Introduction 
+-----------
+Software testing is the process of finding defects in a software.
+The goal is to release quality software to the customer/client.
+
+Manual Testing
+--------------
+Performing the testing without using any tools is know as manual testing.
+Here a tester/ person will do testing.
+
+1. Re-testing
+2. Regression testing
+
+Automation Testing
+------------------
+Performing the testing with the help of tools know as Automation testing.
+
+How Automation tools work?
+Why programming is required in automation.
+
+What is selenium
+---------------
+Selenium is web based automation tool/library
+Selenium was originay developed by Jason Huggins in 2024 Thoghtworks Company.
+Selenium is open source.
+Selenium free.
+Selenium is collectiom of multiple components (IDE, WebDriver, Grid)
+
+typs of applications
+--------------------
+1. Web application
+2. Desktop application
+3. Mobile application
+
+Advantages
+----------
+1. Open source tool & free
+2. Multiple operating systems
+3. Supports multiple browsers
+4. Support multiple Languages (Java, Python, c#, Ruby, Javascript etc)
+5. Integrate third party tools in to selenium.
+
+Dis-advantages
+--------------
+1. Cannot support windows based application (Integrate Third pary tool Autolt, sikuli, Robot API)
+2. Reporting not supported (TentNG,  Extent reports)
+3. Cannot support excel files (Apcahe POI)
+4. Graphs, Capcha, OTP
+
+Selenium versions
+---------
+Selenium 1x -- IDE (Firefox), RC, GRID
+Selenium 2x -- IDE (Firefox), WebDriver, Grid
+Selenium 3x -- IDE (Firefox, Chrome), WebDriver, Grid
+Selenium 4x -- IDE(Firefox, Chrome, edge), WebDriver, Grid
+
+
+
+
+Day 1
+---------
+Java Programming
+------------------------ 
+What is java ?
+Object oriented programming language.
+
+Types of programming languages
+-------------
+Structured - C, Python (NO OOPS concept)
+Object based - VB, VB Script, Python (Class and Object)
+Object Oriented - C++, java, C#, Python (OPPS concept support)
+  
+OPPS
+------------
+Class
+Object
+
+Polymorphism
+Inheritance
+Abstraction
+Encapsulation
+
+Features
+--------
+Platform independent
+Case sensitive
+
+3 Components
+JDK - Java development kit
+JRE - Java Runtime Environment
+JVM - Java Virtual Machine
+
+
+Core java
+Advanced java
+
+Environment setup
+-------------
+JDK/Java
+IDE (Eclipse. IntelliJIDE etc…)
+
+Versions
+------------
+Java 1 to 8 – Sun Microsystems
+Java 9 – Oracle
+
+JDK 11+ preferable for Automation
+
+Naming conventions
+--------------
+Class name should start with uppercase
+Class name should not start with number
+Class name contains _ (underscore)
+Special characters are not allowed
+Class name contains numbers
+
+
+Comments
+-------
+Single line  //
+Multi line   /*           */
+
+Day 2
+---------
+Variables and Data types
+------------------------
+Variables is a container which can hold data to represent the data we need.
+
+int x=100
+float itemprice=10.25
+int age=30
+String name= "ANi";
+char grad='A';
+
+Data types
+--------
+Represents type of data
+
+1. Primitive 
+byte, short, int, long ---> number without decimal
+float, double ---> decimal number
+char ---> single character (single quote)
+boolean ---> true/false
+
+Data type       Size         Description
+----------------------------------------
+byte            1 byte       -128 to 127
+short           2 bytes      -32768 to 32767
+int             8 bytes      -2147483648 to 2147483647
+long            16 bytes     -9223372036854775808 to 9223372036854775807
+
+float           4 bytes       7 decimal digits
+double          8 bytes       15 decimal digits
+
+boolean         1 bit         true or false value
+char            2 bytes signle character/letter
+
+
+
+all primitive data hold only one value.
+
+2. Non - primitive/derived/collections
+String
+Arraylist
+HashMap
+HashSet
+Etc…….
+
+all Non - primitivedata hold multiple value.
+
+Java  is statically typed programming language
+---------
+Example 
+int x= 100;
+x=200; //allowed
+x="Welcome"; // not allowed (String ≠ int) because a variable’s type is fixed.
+You cannot change the data type of a variable.
+
+Python is a dynamically typed language
+-----------
+x = 100
+x = 200        // allowed
+x = "Welcome"  // allowed
+You don’t need to declare the data type, and the same variable can store different types of values.
+
+
+
+Day 3
+---------
+Operators
+--------
+Operator is a symbol which will perform an operation.
+int a=10;
+int b=20;
+int result = a+b;
+
++ , = operators
+A, b operands
+
+Types of Operators
+-----------
+Arithmetic operators + - * / %
+Relational/comparison operators > >= < <= != ==
+Logical operators && || !
+Increment and Decrement Operators ++ –
+Assignment = += -= *= /= %=
+Conditional/ternary operators ?:
+
+Again three divided
+---------------
+Unary Operators(single variable) ++   –  +=  -=  *=  /=  %=
+Binary Operators(Two variables) + - * / % > >= < <= != == && ||
+Ternary Operators(Three variables) ?!
+
+
+Day 4
+---------
+Control Statements
+--------------
+Conditional statements
+Looping/iterative statement
+Jumping statement
+
+Conditional statements
+If
+If else
+Nested if else
+Switch case
+
+if (Condition)
+{
+Statement
+}
+
+if (Condition)
+{
+Statement
+}
+Else
+{
+Statement
+}
+
+If else ladder
+—------------
+if (Condition1)
+{
+}
+else if (condition2
+{
+}
+else if (condition3)
+{
+}
+else
+{
+}
+
+
+
+Day 5
+---------
+Looping/Iterative statements
+---------------------------------------
+While loop
+Do while loop
+For loop
+Enhanced for loop/ For each loop
+1…..10 numbers
+syso(1)
+syso(2)
+syso(3)
+—-
+syso(10)
+Initialization (where to start)
+Condition (how many times)
+inc/dec
+
+While loop
+--------------
+Initialization;
+while(condition)
+{
+Statement;
+inc/dec;
+}
+
+
+Do while loop
+—---------------
+if condition not satisfied at least once round print
+
+do
+{
+Statements;
+inc/dec
+} while (condition);
+
+For loop
+----------
+for( initialization; condition; inc/dec)
+{
+statements;
+}
+
+Which loop is preferred to use
+------------------------------------
+If you know the number of iterations in advance, the for loop is often the most suitable
+If you want to execute the loop at least once, the do-while loop is appropriate.
+If you are uncertain about the number of iterations and the loop termination is based on a condition, the while loop is a good choice. 
+
+
+
+Jumping statements
+------------------------
+break
+continue
+
+Control Statements
+----------------------  --
+Conditional statements —- if, if else, nested if else, switch case
+looping/iterative statements —- while, do while, for loop
+Jumping statements — break, continue   
+
+
+
+Day 6
+---------
+Arrays
+---------
+Array is a collection of elements of the same data type(Homogeneous data).
+We can store multiple values into a single variable.
+100 students – ids – 100 variables 
+int a [ ] = new int [100];
+
+Types of arrays
+----------
+Single dimensional array
+Two dimensional array/multidimensional array
+
+Single dimensional array
+—-----------
+Declare an array
+Add value into array
+Find size of an array
+Read single value from an array
+Read multiple value from an array
+Two dimensional array
+----------------------------
+Declare an array
+Add value into array
+Find size of an array
+Read single value from an array
+Read multiple value from an array
+Object array
+---------------
+ Object a[  ]= {100,10.5,'A',"WELCOME",true};
+Object  a allowed all type of data (heterogeneous data)
+
+
+Day 7
+-------
+Ex 1 : Search an element in array (linear search)
+Ex 2 : Find number of repeatations
+Ex 3 : Sorting
+Ex 4 : Print array element in reverse order
+Ex 5 : Reading data into array
+
+Day 8
+-------
+String methods
+String s=”Welcome”;
+syso(s.lenght())
+
+Day 9
+-------
+Example : Reverse a String
+s = “welcome”
+reverse String = emoclew
+String = “welcome”
+StringBuffer a = new StringBuffer(“welcome”);
+StringBuilder a = new StringBuilder(“welcome”);
+
+Immutable - we cannot change
+Mutable - we can change
+
+String - Immutable, cannot change
+StringBuffer - mutable, can change
+StringBuilder - mutable, can change
+String Comparison
+---------------
+== equals( )
+String s = “welcome”
+String s = new String (“welcome”)
+
+Day 10
+-------
+Object oriented Programming
+----------------------
+Class
+Object
+Polymorphism
+Encapsulation
+Inheritance
+Data Abstraction
+
+
+Class - Class is a collection of attributes(variable) and behavior(methods)
+Example : Animals - - > Dog, Elephant, horse…..etc. (Objects)
+                  Students - - > Kim, David, Scott …….etc. (Objects)
+
+Object  is an instance of a class
+
+Class
+-------
+Class is collection of variables and methods
+Class is logical entity/Blueprint
+Will not occupy space in the memory
+class Employee 
+{
+Variables
+methods
+}
+
+Object 
+---------
+An object is an instance of a class/ object that will be created by using a class.
+Object is physical entity
+Occupy space in memory
+We can create multiple objects for single class
+Employee emp1 = new Employee ( ) ;  
+Employee emp2 = new Employee ( ) ;
+
+Day 11
+-------
+Methods
+Block or group of statements which will perform a certain task, we have to call the method through the object.
+
+Build in methods
+User defined methods
+
+No params             No return value
+No params             Return value
+Takes params        No return value
+Takes params        Returns value
+String s = new String (“welcom”);
+int len =  s.length( );  - No params             Return value
+String sub = s.substring (2, 5); 
+
+How many ways we can store data into variables
+---------------------
+1) Using Object reference variable
+2) using method
+3) using constructor //name should be class name
+
+Method :
+-------
+Method name can be anything
+Method may or may not return a value
+If method is not returning any value then specify void
+Method can take parameter/arguments
+We have to invoke / call methods explicitly through object
+Used for specifying logic
+
+Constructor:
+-------
+The constructor name should be the same as the class name.
+Constructor will never return a value (not even void)
+We don't specify the void
+Constructor can take parameters / arguments
+Constructor automatically invoked at the time of object creation.
+Used for initializing the value of the variables.
+
+Constructors
+-----------
+Default Constructor
+Parameterized Constructor
+
+Day 12
+-------
+Polymorphism
+
+One thing can have many forms
+Shape - Circle, Square, triangle, rectangle…etc
+Water - Vapour, Iceberg etc….
+
+We can achieve polymorphism using overloading
+Void m1( )
+Void m1(....... )
+Void m1(................ )
+
+4 rules are applicable
+--------
+Method names should be same
+Number of parameters should be different
+Data type of parameters should be different
+Order of parameters should be different
+Encapsulation
+--------
+Wrapping up of data and methods in a single unit (class)
+
+All variables should be Private
+For every variable there should be 2 methods (get and set)
+Variables can be operated only through methods.
+
+Can we overload the main method ?
+Yes
+
+Day 13
+------
+this keyword
+2 types of variables
+---------
+Class variables / instance variables
+Local variables
+
+Static 
+------
+Static keyword can be applied for variables and methods
+Static variables
+Static methods
+
+Non-static variables
+Non-static methods
+static method can access static stuff directly (without object)
+static methods can access non-static stuff through objects.
+Non-static methods can access everything directly.
+
+class Test 
+{
+Static String s = “welcome”;
+}
+Test.s.length ( ) ;
+
+
+class System
+{
+static PrintStream out;
+}
+
+System.out.println ( ) ;  
+// System - Predefine class
+// out - Static variable of PrintStream type
+// println - method which is a part of PrintStream  class
+
+
+JVM 
+
+Public static void main ( String [ ]  args )   // VALID
+{
+}
+
+
+
+static  Public void main ( String [ ]  args )  // VALID
+{
+}
+
+Public void static  main ( String [ ]  args )  // INVALID
+{
+}
+
+void main ( String [ ]  args  Public static )   // INVALID
+{
+}
+
+JVM will not Look this method
+Public static void main ( int  a [ ]  )   // VALID
+{
+}
+
+Day 14
+------
+How to pass parameters to main methods ?
+
+Inheritance
+------
+Acquiring all the properties(variables) and Behaviours (methods) from one class to another class is called inheritance.
+Objective 
+-------
+ Reusability
+Avoid duplication
+
+Types
+----
+Single
+Multi level
+Hierarchy
+multiple
+Single Inheritance
+-----
+Class
+|
+Class
+
+Multi level Inheritance
+-----
+Class
+|
+Class
+|
+Class
+|
+Class
+Hierarchy Inheritance
+------
+                       Class
+                  /      |      \
+                 /       |       \
+            Class      Class      Class
+
+Multiple (Class Not supported Multiple Inheritance)
+-----
+Interface          Interface          Interface 
+      \                 |                 /
+        \               |               /
+          \             |             /
+            \           |           /
+              \         |         /
+                \       |       /
+                  \     |     /
+                    \   |   /
+                      \ | /
+                        |
+                     Interface 
+
+
+Day 15
+------
+Method overriding (Inheritance concept)
+----------
+Possible only in multiple classes ( inheritance)
+We should NOT charge the signature of the method but nobody we should change.
+Method names are the same.
+Belongs to inheritance.
+Method overloading 
+----------
+Possible in single and multiple classes (inheritance)
+We should change the signature of the method.
+Method names are the same.
+Belongs to polymorphism.
+
+Final - variable, methods, classes
+------
+Variable - we can't change the value of variable (constant)
+Methods - we can't override those methods in child classes.
+Class -we can't extend the class.
+
+Super 
+-----
+Super keyword will be used to invoke the immediate parent class variable.
+Super keyword will be used to invoke the immediate parent class method.
+
+Day 16
+------
+Data Abstraction
+---------
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Abstract class
+Interface
+
+
+
+
+Interface
+-----
+An interface is a blue print of class
+Interface contains final and static variables.
+Interface contains abstract methods ( also allowed default and static methods from java8 onwards)
+An abstract method is a method contains signature but not body ( un implemented method)
+Methods in the interface are public.
+Interface supports the functionality of multiple inheritance.
+We can define an interface with an interface keyword.
+A class extends another class, an interface extends another interface but a class implements an interface.
+We can create object references for the interface but we can instantiate the interface.
+
+class Test
+{
+Variable
+methods
+}	
+
+interface Test
+{
+Variable  ( final & Static or by default )
+methods
+}
+
+
+
+OOPS
+-----------
+Class
+Object
+Polymorphism  - Overloading
+Encapsulation - Setters & Getters
+Inheritance - Overriding
+Data abstraction - Interface, abstract class
+
+
+
+
+Day 17
+------
+Wrapper classes
+—--------------
+(Data conversion) only primitive type
+int - Integer
+float - Float
+double - Double
+char - Character
+boolean - Boolean
+short - Short
+
+Example
+String price1 = “150..50”;
+String price2 =”200.50”;
+
+Add price1 and price2, as a string its not possible
+
+Scenario 1 -  String – > int, double, boolean, char
+Scenario 2  –  int, double, boolean, char — > String
+
+String —> int                  Integer.parseInt (String value)
+String —> double           Double.parseInt (String value)
+String —> boolean         Boolean.parseInt (String value)
+String —> char                Not possible
+
+Any data type — > string 
+String.valueOf( ) - convert all primitive data type into string formate
+Packages and Access modifiers
+------------
+
+Built in package - Ex util package
+User - define package
+
+Access modifiers - defines scope of variable and methods
+--------
+public - directly access all variables and methods anywhere
+protected - outside of the package only through inheritance (import package)
+default - only within the package	
+private - access only within the class
+
+Day 18
+------
+Exception handling
+--------
+Exception is an event which will cause program termination.
+
+Errors
+—
+Syntax
+Logical
+
+Types of exceptions
+-------------
+Checked exceptions
+The exceptions which one identifies by java compiler.
+Ex : InterruptedException
+        FileNotFound
+        IOException etc……
+Un-Checked exceptions
+The exceptions which are not identified by java compiler
+Ex : ArithmeticException
+        NullPointerException
+        ArrayIndexOutOfBoundsException etc…
+
+
+
+
+Day 19
+------
+Type casting
+—-------------
+Converting type of data.
+
+Types
+—---
+Upcasting / widening
+Downcasting / Narrowing
+
+Child c = new Child( );
+Parent p = new Child( );
+
+
+Day 20
+------
+Collection
+—-----------
+
+                          Collection (I)                                                                 Map (I)
+                           /            \                                                                   |
+                        /                 \                                                                 |
+                      /                     \                                                               |
+          List (I)                       Set (I)                                                          HashMap ( C )
+              |                              |                                                      Example
+              |                              |                                                          Key  :  value
+              |                              |                                                            id : name
+     ArrayList ( C )                     HashSet ( C )
+
+Collection - To represent group of element / objects / data into single entity
+“Collection” is an interface available in java.util class
+
+ArrayList - is class which is implemented list interface
+—-----------------------------------------------------------------
+1. Heteronious data - allowed
+2. Insertion order - preserved (Index)
+3. Duplicate elements - allowed
+4. Multiple null - allowed
+
+String m1()
+{
+}
+String x=m1()
+
+
+Iterator iterator()
+{
+---------
+}
+
+Iterator it = mylist.iterator();
+
+
+HashSet - a class implemented Set interface
+--------
+1. Heterogenios data - allowed
+2. Insertion order - Not preserved (index not supported)
+3. Duplicate elements - Not allowed
+4. Multiple nulls not allowed/ only singlle null is allowed
+
+HashMap - a class implemented Map interface 
+-----------
+1. Data can be stored in the form of key : Value pairs.
+2. key is unique. But we can have duplicate values.
+3. Insertion order not preserved (Index not allowed)
+
+
+
+
+
+
+Automation Testing
+Day 21
+--------
+Selenium WebDriver
+
+What is Selenium WebDriver?
+------------------
+Webdriver is one of the component in selenium
+Webdriver is a Java Interface
+WebDriver is an API (Application Programming Interface)
+
+WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver……
+
+Environment SetUp
+-----------------
+Download jars files and attach them to java projects. (Manually) - Not recommended
+Created new Java project
+Downloaded WebDriver jar(.zip) and Extracted.
+Attach jars to Java project
+Selenium Jar file
+Stable: 4.35.0 (August 12, 2025)
+
+Create Maven Project (Recommended)
+Created a new Maven Project n eclipse
+Added webdriver dependencies in pom.xml and Updated.
+pom.xml  dependencies
+https://mvnrepository.com/
+
+
+
+Day 22
+--------
+Locators
+---------
+id
+Name
+Linktext
+PartialLinktext
+Class Name  (group of element)
+TagName (group of element)
+CSS Selector (Customised Locators)
+Tag  and ID
+Tag and Class
+Tag and attribute
+Tag, class and attribute
+XPath (Customised Locators)
+Absolute Xpath
+Relative XPath
+
+driver.findElement(By.id( ))
+
+findElement( ) – single webElement
+findElements( ) – multiple webElements
+
+Scenario1 : Locator matching with single webElement
+findElement(loc) — > single web Element    webElement
+findElements(loc) — > single web Element   List < webElement>
+
+Scenario2 : Locator matching with multi webElements
+findElement(loc) — > single web Element    webElement
+findElements(loc) — > single web Element   List < webElement>
+
+Scenario1 : Locator is not matching any elements
+findElement(loc) — > No Such Element Exception
+findElements(loc) — > will not throw any exception, Return 0
+
+Day 23
+--------
+
+CSS Selector
+-----
+CSS - Cascading Style Sheets
+
+tag id                   tag#id
+tag class                tag.classname
+tag attribute            tag[attribute="value"]
+tag class attribute      tag.classname[attribute="value"]
+
+
+Day 24
+--------
+XPath
+------
+XPath is an address of the object
+DOM - Document Object Model
+
+2 types of XPath
+---------
+Absolute XPath (Full XPath)
+/html/body/header/div/div/div[2]/div/input
+Relative XPath (Partial XPath)
+//*[@id="search"]/input
+
+Which xpath will be preferred?
+Relative xpath.
+
+
+Difference between Absolute and Relative xpaths?
+Absolute xpath starts with / ------ > represents root node
+Relative xpath stats with //
+Absolute xpath do not use attributes
+Relative xpath works with attributes.
+Absolute xpath traverse through each node till it finds element
+Relative xpath directly jumps and finds the element by using attributes.
+
+Relative xpath
+------------
+Automatically - Devtools, selectorshub
+Manually (own xpath)
+Symbol : 
+----
+//tagname[@attribute=”value”]
+//*[@attribute=”value”]
+
+Example : 
+//img[@title=’MacBook’]  or //img[@title=’MacBook”]
+
+xpath with single attributes		
+driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-shirts");
+	
+xpath with multiple attributes	 driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("T-shirts");
+
+xpath with ‘and’ ‘or’ attributes
+driver.findElement(By.xpath("//input[@placeholder='Search' and @name='search']")).sendKeys("T-shirts");
+driver.findElement(By.xpath("//input[@placeholder='Search' or @name='search']")).sendKeys("T-shirts");
+xpath with inner text - text( )
+//a[text ( ) = ‘Desktps’]
+//a[text ( ) = ‘MacBook’]
+
+<a href=”https://xyz.com”> Click Me </a>
+Linktext = Yes
+Inner text = Yes
+
+<div> Welcome </div>
+Linktext = No
+Inner text = Yes
+
+xpath with contains( )
+-----
+//input[contails(@placeholder, 'sea']
+
+Handling dynamic attributes
+------------
+//*[@id=’statr’ or @id=’stop’]
+//*[contains(@id,’st’)]
+//*[starts-with(@id,’st’)]
+
+name=xyz001 xyz002 xyz003 xyz004
+//*contails(@name, ‘xyz’)]
+//*contails(@name, ‘00’)]
+//*starts-with(@name, ‘xyz’)]
+
+name=001xyz    002xyz    003xyz    004xyz
+//*[contains(@name,’xyz’)]
+//*[contains(@name,’00’)]
+//*starts-with(@name, ‘00’)]
+
+name=101xyz    201xyz    301xyz   401xyz
+//*[contains(@name, ‘xyz’)]
+
+Chained xpath (combination Relative and Absolute)
+---------
+//div[@id='logo']/a/img
+
+
+
+Day 25
+--------
+Xpath axex
+------
+Self
+Parent
+Child
+Ancestor
+Descendent
+Following
+Preceding
+Following-sibling
+Preceding-sibling
+
+
+Day 26
+---------
+Get methods
+Conditional methods
+Browser methods
+Navigational methods
+Wait methods
+ 
+Get methods - we can access these methods through webdriver instance
+-------------
+get(url) - opens the url on the browser
+getTitle( ) - returns title of the page
+getCurrentUrl ( ) - returns URL of the page
+getPageSource ( ) - returns source code of the page
+getWindowHandle ( ) - returns ID of the single Browser window
+getWindowHandles ( ) - returns ID’s of the multiple Browser windows
+
+Conditional methods - access these commands through webElement
+-------------
+Returns boolean value (ture/false)
+isDisplayed ( ) - we can check display status of the element
+isEnabled ( ) - we can check enable/disable status of the element/operational element
+isSelected ( ) - we can use to check the element is selected or not
+
+
+
+
+Browser methods
+-------------
+Close ( ); - close single browser wherever the driver is focused
+Quit ( ); - Close the all the windows
+
+Assignment
+-------------
+https://testautomationpractice.blogspot.com/
+
+
+
+Day 27
+---------
+Wait commands
+-----------
+Synchronization
+Thread.sleep ( );
+Implicit wait
+Explicit wait/fluent wait
+
+NoSuchElementException - Element is not present on the page Synchronization
+ElementNotFoundException - Locator is in-correct
+
+Sleep ( )  - java command not a webElement 
+-----
+Adv
+—
+Easy to use
+
+
+Dis Adv
+-------
+If the time is not sufficient than you will get exception
+It will wait for maximum time out and this will reduce the performance script.
+Multiple times.
+
+Implicit wait
+---------
+driver.manage( ).timeouts ( ).implicitywait (Duaration.ofSeconds (10));
+
+Advantages
+--------
+Single time/one statement
+It will not wait till maximum time if the element is available
+Application for all the elements
+Easy to use
+
+DIsadvantages
+------------
+If the time is not  sufficient then you will get an exception.
+
+
+
+Explicit wait
+---------
+Declaration
+Use
+Conditional based, it will work more effectively.
+Finding element is inclusive (for some conditions)
+It will wait for condition to be true, then consider the time
+We need to write multiple statements for multiple elements.
+
+
+Day 28
+---------
+Navigational commands
+--------
+
+navigate ( ).to(url)
+navigate ( ).back( )
+navigate ( ).forword( )
+navigate ( ).refresh( )
+
+driver.get() --> accepts URL in string formate only
+driver.navigate().to() --> accepts URL in the string formate & URL object formate.
+
+
+getWindowHandle()
+getWindowHandles()
+
+driver.switchTo().window(windowID)
+
+
+Day 29
+---------
+Checkboxes
+
+Alerts/popups
+-------------
+driver.switchTo().alert().accept()
+driver.switchTo().alert().dismiss()
+driver.switchTo().alert().getText()
+driver.switchTo().alert().sendKeys(text)
+
+or
+
+Alert myalert = driver.switchTo().alert();
+
+myalert.accept()
+myalert.dismiss()
+myalert.getText()
+myalert.sendKeys(text)
+
+Authenticated popup
+
+http://the-internet.herokuapp.com/basic_auth
+http://username:password@the-internet.herokuapp.com/basic_auth
+
+
+
+Day 30
+---------
+frames/iframes
+—------------------
+driver.switcTo.frame(name)
+driver.switcTo.frame(id)
+driver.switcTo.frame(WebElement)
+driver.switcTo.frame(index)
+
+driver.switcTo.defaultContent()
+
+
+3 types of switching methods
+-------------
+
+1. browser windows
+     driver.switchTo().window(windowID/window handle)
+
+2. alerts
+     driver.switchTo().alert()
+     driver.switchTo().accept()
+     driver.switchTo().dismiss()
+
+3. frames
+     driver.switchTo.frame(id);
+     driver.switchTo.frame(name);
+     driver.switchTo.frame(WebElement);
+
+Day 31
+---------
+
+Dropdown Box
+-------------
+1. select dropdown
+2. Bootstrap dropdown
+3. hidden dropdown
+
+Select dropdown
+--------
+select
+
+selectByVisibilityText()
+selectByValue()
+selectByIndex()
+
+<Select id="country">
+<option value="in">India<option>
+
+getOptions() -- returns all the options from the dropdown as a webElement.
+
+
+Day 32
+------
+
+Web Tables
+--------
+1. static web table
+2. Dynamic web table
+3. table with pagination
+
+
+Day 33
+------
+Dynamic table with pagination
+----------
+
+
+Day 34
+------
+Date picker/Calenders
+-------------------
+
+
+Day 35
+------
+
+Mouse actions
+-------------
+Mouse hover  --> moveToElement(element)
+right click  --> contextClick(element)
+double click --> doubleClick(element)
+drag and drop --> dragAndDrop(source, target)
+
+Actions - pre defined class provide in selenium
+
+build() - create an action
+perform() - complete an action
+
+
+getText() Vs getAttribute(attribute)
+--------------------
+
+<input id="xyz"> welcome </input>
+
+getText() --> returns the inner text --> welcome
+getAttribute("id") --> returns the value of attributes --> xyz
+
+<input value="welcome"></input>
+getAttribute('value" --> welcome
+
+getText() --> returns inner text of the web element
+getAttribute(attribute) --> returns value of attribute
+
+
+Actions Vs Action
+----------
+
+Actions - Class, will be used to perform mouse actions.
+Action - interface, will be used to store created actions.
+
+
+Day 36
+-----
+
+Slider
+
+
+Day 37
+------
+
+JavaScriptExecutor
+------------
+
+executeScript() - we can execute javascript statements.
+
+sendKeys()
+click()
+
+
+Scrolling bar
+----
+
+Upload files
+-----
+
+Day 38 
+------
+Capture Screenshots
+-----------
+1. full page
+2. special area of the page
+3. web element
+
+ChromeOptions
+EdgeOptions
+FirefoxOptions
+etc....
+
+
+ChromeOptions
+-----
+1. Headless testing
+
+ChromeOptions options=new ChromeOptions();
+options.addArguments(("--headless=new");
+
+advantages
+------
+1. we can do multiple tasks( since execution happed backend)
+2. faster execution
+
+disadvantages
+----
+1. user cannot see the actions on the page. so he cannot understand 
+   flow/functionality of the test.
+
+SSL Handling
+----------
+ChromeOptions options = new ChromeOptions();
+options.setAcceptInsecureCerts(true); // accepts SSL certifications
+
+
+to remove "Chrome is being controlled by automated test software"
+---------------------
+ChromeOptions options = new ChromeOptions();
+options.setExperimentalOption("excludeSwithches", new String[] {"enable-automation"});
+
+
+to run the tests in Incognito mode
+--------------------
+ChromeOptions options = new ChromeOptions();
+options.addArguments("--incognito");
+
+
+Enable extensions in browser
+----------------
+step 1 : Add CRX Extractor/Downloader to chrome Browser (manually)
+step 2 : Add SelectorHub plugin to chrome browser (manually)
+step 3 : Capture CRX file for selectorHUb extension
+step 4 : Pass CRX file path in automation script in chrome Options.
+
+
+Day 39
+---------
+
+Broken Links
+------
+
+1. Link href="https://xyz.com"
+2. https://xyz.com --> server --> status code
+3. status code >= 400 broken link
+   status code < 400 not a broken link
+
+
+Shadow DOM
+-----------
+
+
+Day 40
+-------
+Apache POI library
+
+Excel File --> Workbook --> Sheets --> Rows --> Cells
+
+FileInputStream -- Reading
+FileOutputStream -- Writting
+
+XSSFWorkbook -- Workbook
+XSSFSheet  -- Sheer
+XSSFRow -- Row
+XSSFCell -- Cell
+
+1. Reading data from excel
+
+
+Day 41
+-------
+
+Data Driven testing
+------------
+1. Functionality (Test case)
+2. Preapre test data in excel
+3. develope automation script
+
+Reading properties file
+
+
+Day 42
+------
+TestNG - Test New Generation
+
+java based unit testing tool.
+
+Advantages
+-----
+1. Test cases & test suites
+2. Grouping of test cases
+3. Prioritize
+4. Parameterization
+5. Parallel testing
+6. Reports
+
+TestNG Configuration
+---------
+1. Install testing in eclipse
+2. add testing library to build path / add TestNg dependency in pom.xml
+
+@Test - annotation
+
+1. TestNG execute test methods based on alphabetical order.
+2. @Test(priority=num) controls the order of execution.
+3. Once you provide priority to the test methods, then order of methods is not considered.
+4. Priorities can be random numbers (no need to have consecutive numbers)
+5. If you don't provide priority then default value is zero (0).
+6. If the priorities are same then again execute methods in alphabetical order.
+7. Negative value are allowed in priority.
+8. TestNG execute test methods only if they are having @Test anootation.
+
+execute test cases  using testng xml file
+
+test xml file
+---
+1. generate automatically
+2. manually
+
+Test suite --> Test cases --> test steps
+xml file --> classes --> Test methods
+
+2 things achived throgh xml
+-------
+1. executed group of test cases as a 1 suite
+2. We can generate testng reports (default)
+
+
+Day 43
+------
+Annotations
+----------
+
+@Test
+
+@BeforeMethod
+@AfterMethod
+
+@BeforeClass
+@AfterClass
+
+@BeforeTest
+@AfterTest
+
+@BeforeSuite
+@AfterSuite
+
+
+TC1
+---
+1. Login -- @BeforeMethod
+2. Search -- @Test
+3. Logout -- @AfterMethod
+4. Login
+5. Adv Search -- @Test
+6. Logout
+
+TC2
+---
+1. Login -- @BeforeClass
+2. Search -- @Test
+3. Adv Search -- @Test
+4. Logout -- @AfterClas
+
+Assertion - Validation point
+
+2 kinds of assertions
+---------
+1. Hard assertions
+2. Soft assertions
+
+
+Day 44
+------
+dependency methods
+
+openapp
+login
+search
+advsearch
+logout
+
+dependsOnMethods = {"method name1", "method name2", ....}
+
+grouping
+-------
+
+class1 - m1, m2, m3
+class2 - m4,m5, m6
+class3 - m7, m8, m9
+
+sanity
+regression
+functional
+
+loginByfacebook - sanity
+loginby email - sanity
+loginby twitter - sanity
+
+signbyfacebook - regression
+signbutwitter - regression
+signbyemail - regression
+
+paymentinrupees - sanity, regression (functional)
+paymentindollers - sanity, regression (functional)
+
+1. all sanity tests
+2. all regression tests
+3. all sanity but not regression
+4. all regression but not sanity
+5. all methods which are belongs to both sanity and regression
+
+@Test
+----
+priority
+dependsOnMethods
+groups
+etc.....
+
+
+Day 45
+-------
+Parameterization
+-----
+1. @DataProvider
+2. using xml file - parallel testing
+
+Parallel testing using xml file
+---------
+step 1 : Create test case
+step 2 : Create xml file then run test case throght xml
+step 3 : passed browser name, url as parameter from xml file to setup() method
+step 4 : execute test case on chrome, firebox & Edge (serial/sequcecial execution)
+step 5 : execute test case on chrome, firefox & edge (parallel execution)
+
+Day 46
+------
+
+TestNg Listners
+---------
+
+1. create test case
+2. create listener class
+3. create xml file and include both test case & listener class
+
+2 ways to implement listener class
+------
+Method1
+----
+class myListener implements ITestListener
+{
+
+}
+
+Method2
+class myListener extends TestListenerAdpter
+{
+
+}
+
+
+Day 47
+----
+
+Page Object Model
+---------
+
+Test case
+----
+locators
+test methods - Code - validations+Actions
+
+2 approaches to create page object classes
+----
+1. without using PageFactory
+2. Using PageFactory
+
+
+Day 48
+-----
+
+Automation Framework
+---------------
+We organize automation project files/folders in structured manner.
+
+Objectives
+----------
+1. Re-usubality
+2. Maintainability
+3. Readability
+
+Types of Frameworks
+-------------
+1. Buit-in
+        Ex : testng, jUnit, cucumber, robot etc...
+
+2. cutomized (user defgined)
+        modular framework, data driven, keywork driven, hybrid driven etc..
+
+Phases/Stages
+------------
+1. Analysing AUT
+    - Number of Pages
+    - What ate all elements / how/tupe
+    - what to automate/ what we cannot automate
+
+2. choose test cases for automation
+
+100 Test cases --- 90 automable 10 cannot automate
+100 % automation
+
+1. Sanity test cases - P1
+2. Data driven test cases/re-tests - P2
+3. Regression test cases - P3
+4.  Any other cases - P4
+
+3. Design & Development pf Framework
+
+4. Execution - local, remotely
+
+5. Maintence
+
+
+Day 49
+------
+
+Day 50
+------
+Logging - record all the events in the form of text.
+
+Log levels - All < Trace < Debug < Info < Warm < Error < Fatal < Off
+
+Appenders - Where to generate logs (Console/File)
+Loggers - What type of logs generate (All < Trace < Debug < Info < Warm < Error < Fatal < Off)
+
+
+Day 51
+------
+Day 52
+------
+Day 53
+------
+Day 54
+------
+
+Docker Containerazation
+
+images commands
+-----
+docker images
+docker pull ubuntu
+docker rmi <image id>
+
+container commands
+---------
+
+docker ps
+docker run <<container id>>
+docker start <<container id>>
+docker stop <<container id>>
+docker rm <<containner id/name>
+
+system commands
+-------
+docker stats
+docker system df
+docker system prune -f
+
+3 conatiners
+--------
+1. hub
+2. linux-firefox
+3. linux-chrome
+
+
+
+Day 55
+------
+
+pom.xml
+---
+dependencies -- download required dependency jar for project
+plugins -- to compile and run the project
+
+1. maven compiler plugin
+2. maven surefire plugin
+
+Git & GitHub workflow
+---------
+
+Round1
+---
+1. create a new local repository (One time)
+    git init
+
+2, provided user info to git repo. (one time)
+
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+
+3. Adding files/folders  to staging/indexing
+    git add -A      --> add all the files and folders to staging
+    git add filename
+    git add *.jav
+    git add foldername
+
+4. Commit the code into Local(git) repository
+    git commit -m "commit message"
+
+5. Connect local repository with remote rep. (One time)
+    git remote add origin "https://github.com/pavanoltraining/OpencartV121.git"
+
+6. push the code into remote repository
+    git push origin master
+
+token :  xxxxxxxxxxxxxxxx
+
+Round 2
+----
+1. git add -A
+2. git commit -m "commit message"
+3. git push origin master
+
+Pull the files from remote repository
+-----
+git pull "https://github.com/pavanoltraining/OpencartV121.git"
+
+clone new repository to l,oacl system
+
+git clone "https://github.com/pavanoltraining/testrepo.git"
+
+
+Day 56
+------
+
+Jenkins
+----
+
+https://github.com/pavanoltraining/OpencartV121.git
