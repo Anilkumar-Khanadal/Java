@@ -1,7 +1,7 @@
 Introduction 
 -----------
-Software testing is the process of finding defects in a software.
-The goal is to release quality software to the customer/client.
+1. Software testing is the process of finding defects in a software.
+2. The goal is to release quality software to the customer/client.
 
 Manual Testing
 --------------
@@ -20,11 +20,11 @@ Why programming is required in automation.
 
 What is selenium
 ---------------
-Selenium is web based automation tool/library
-Selenium was originay developed by Jason Huggins in 2024 Thoghtworks Company.
-Selenium is open source.
-Selenium free.
-Selenium is collectiom of multiple components (IDE, WebDriver, Grid)
+1. Selenium is web based automation tool/library
+2. Selenium was originay developed by Jason Huggins in 2024 Thoghtworks Company.
+3. Selenium is open source.
+4. Selenium free.
+5. Selenium is collectiom of multiple components (IDE, WebDriver, Grid)
 
 typs of applications
 --------------------
