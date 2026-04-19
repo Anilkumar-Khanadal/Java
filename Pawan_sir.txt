@@ -428,6 +428,8 @@ String Comparison
 String s = “welcome”
 String s = new String (“welcome”)
 
+
+
 Day 10
 -------
 Object oriented Programming
@@ -441,16 +443,17 @@ Data Abstraction
 
 
 Class - Class is a collection of attributes(variable) and behavior(methods)
-Example : Animals - - > Dog, Elephant, horse…..etc. (Objects)
-                  Students - - > Kim, David, Scott …….etc. (Objects)
+Example : Animals --> Dog, Elephant, horse…..etc. (Objects)
+          Students --> Kim, David, Scott …….etc. (Objects)
 
 Object  is an instance of a class
 
 Class
 -------
-Class is collection of variables and methods
-Class is logical entity/Blueprint
-Will not occupy space in the memory
+1. Class is collection of variables and methods
+2. Class is logical entity/Blueprint
+3. Will not occupy space in the memory
+
 class Employee 
 {
 Variables
@@ -459,27 +462,33 @@ methods
 
 Object 
 ---------
-An object is an instance of a class/ object that will be created by using a class.
-Object is physical entity
-Occupy space in memory
-We can create multiple objects for single class
+1. Object is an instance of a class/ object that will be created by using a class.
+2. Object is physical entity
+3. Occupy space in memory
+4. We can create multiple objects for single class
+
 Employee emp1 = new Employee ( ) ;  
 Employee emp2 = new Employee ( ) ;
+
+
 
 Day 11
 -------
 Methods
+-------
 Block or group of statements which will perform a certain task, we have to call the method through the object.
 
-Build in methods
-User defined methods
+1. Build in methods
+2. User defined methods
 
-No params             No return value
-No params             Return value
+No params           No return value
+No params           Return value
 Takes params        No return value
 Takes params        Returns value
-String s = new String (“welcom”);
-int len =  s.length( );  - No params             Return value
+
+
+String s = new String (“welcome”);
+int len =  s.length( );  - No params   Return value
 String sub = s.substring (2, 5); 
 
 How many ways we can store data into variables
@@ -490,26 +499,28 @@ How many ways we can store data into variables
 
 Method :
 -------
-Method name can be anything
-Method may or may not return a value
-If method is not returning any value then specify void
-Method can take parameter/arguments
-We have to invoke / call methods explicitly through object
-Used for specifying logic
+1. Method name can be anything
+2. Method may or may not return a value
+3. If method is not returning any value then specify void
+4. Method can take parameter/arguments
+5. We have to invoke / call methods explicitly through object
+6. Used for specifying logic
 
 Constructor:
 -------
-The constructor name should be the same as the class name.
-Constructor will never return a value (not even void)
-We don't specify the void
-Constructor can take parameters / arguments
-Constructor automatically invoked at the time of object creation.
-Used for initializing the value of the variables.
+1. The constructor name should be the same as the class name.
+3. Constructor will never return a value (not even void)
+4. We don't specify the void
+5. Constructor can take parameters / arguments
+6. Constructor automatically invoked at the time of object creation.
+7. Used for initializing the value of the variables.
 
 Constructors
 -----------
-Default Constructor
-Parameterized Constructor
+1. Default Constructor
+2. Parameterized Constructor
+
+
 
 Day 12
 -------
