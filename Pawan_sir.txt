@@ -19,7 +19,7 @@ How Automation tools work?
 Why programming is required in automation.
 
 What is selenium
----------------
+----------------
 1. Selenium is web based automation tool/library
 2. Selenium was originay developed by Jason Huggins in 2024 Thoghtworks Company.
 3. Selenium is open source.
@@ -530,27 +530,33 @@ One thing can have many forms
 Shape - Circle, Square, triangle, rectangle…etc
 Water - Vapour, Iceberg etc….
 
-We can achieve polymorphism using overloading
+We can achieve polymorphism using overloading (Method and constructor)
 Void m1( )
 Void m1(....... )
 Void m1(................ )
 
+Method overloading (Polymorphism)
+Constructor overloading(Polymorphism)
+
 4 rules are applicable
 --------
-Method names should be same
-Number of parameters should be different
-Data type of parameters should be different
-Order of parameters should be different
+1. Method names should be same
+2. Number of parameters should be different
+3. Data type of parameters should be different
+4. Order of parameters should be different
+
+Can we overload the main method ?
+Yes
+
 Encapsulation
 --------
 Wrapping up of data and methods in a single unit (class)
 
-All variables should be Private
-For every variable there should be 2 methods (get and set)
-Variables can be operated only through methods.
+1. All variables should be Private
+2. For every variable there should be 2 methods (get and set)
+3. Variables can be operated only through methods.
 
-Can we overload the main method ?
-Yes
+
 
 Day 13
 ------
