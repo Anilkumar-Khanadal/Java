@@ -561,6 +561,7 @@ Wrapping up of data and methods in a single unit (class)
 Day 13
 ------
 this keyword
+
 2 types of variables
 ---------
 Class variables / instance variables
@@ -574,9 +575,9 @@ Static methods
 
 Non-static variables
 Non-static methods
-static method can access static stuff directly (without object)
-static methods can access non-static stuff through objects.
-Non-static methods can access everything directly.
+1. static method can access static stuff directly (without object)
+2. static methods can access non-static stuff through objects.
+3. Non-static methods can access everything directly.
 
 class Test 
 {
@@ -598,28 +599,28 @@ System.out.println ( ) ;
 
 JVM 
 
-Public static void main ( String [ ]  args )   // VALID
+Public static void main ( String []  args )   // VALID
+{
+}
+
+static  Public void main ( String []  args )  // VALID
+{
+}
+
+Public void static  main ( String []  args )  // INVALID
+{
+}
+
+void main ( String []  args  Public static )   // INVALID
+{
+}
+
+JVM will not Look this method or this is normal method
+Public static void main ( int  a []  )   // VALID
 {
 }
 
 
-
-static  Public void main ( String [ ]  args )  // VALID
-{
-}
-
-Public void static  main ( String [ ]  args )  // INVALID
-{
-}
-
-void main ( String [ ]  args  Public static )   // INVALID
-{
-}
-
-JVM will not Look this method
-Public static void main ( int  a [ ]  )   // VALID
-{
-}
 
 Day 14
 ------
