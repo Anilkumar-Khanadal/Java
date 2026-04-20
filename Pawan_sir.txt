@@ -628,23 +628,28 @@ How to pass parameters to main methods ?
 
 Inheritance
 ------
-Acquiring all the properties(variables) and Behaviours (methods) from one class to another class is called inheritance.
-Objective 
+Acquiring all the properties(variables) and Behaviours (methods) from one class 
+to another class is called inheritance.
+
+Objective Inheritance
 -------
- Reusability
-Avoid duplication
+1. Re-usability
+2. Avoid duplication
 
 Types
-----
-Single
-Multi level
-Hierarchy
-multiple
+-----
+1. Single
+2. Multi level
+3. Hierarchy
+4. Multiple
+
+
 Single Inheritance
 -----
 Class
 |
 Class
+
 
 Multi level Inheritance
 -----
@@ -655,12 +660,15 @@ Class
 Class
 |
 Class
+
+
 Hierarchy Inheritance
 ------
                        Class
                   /      |      \
                  /       |       \
             Class      Class      Class
+            
 
 Multiple (Class Not supported Multiple Inheritance)
 -----
@@ -676,6 +684,8 @@ Interface          Interface          Interface
                       \ | /
                         |
                      Interface 
+
+
 
 
 Day 15
