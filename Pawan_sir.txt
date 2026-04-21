@@ -692,51 +692,52 @@ Day 15
 ------
 Method overriding (Inheritance concept)
 ----------
-Possible only in multiple classes ( inheritance)
-We should NOT charge the signature of the method but nobody we should change.
-Method names are the same.
-Belongs to inheritance.
+1. Possible only in multiple classes ( inheritance)
+2. We should NOT charge the signature of the method but body we should change.
+3. Method names are the same.
+4. Belongs to inheritance.
+
 Method overloading 
 ----------
-Possible in single and multiple classes (inheritance)
-We should change the signature of the method.
-Method names are the same.
+1. Possible in single and multiple classes (inheritance)
+2. We should change the signature of the method.
+3. Method names are the same.
 Belongs to polymorphism.
 
 Final - variable, methods, classes
 ------
-Variable - we can't change the value of variable (constant)
-Methods - we can't override those methods in child classes.
-Class -we can't extend the class.
+1. Variable - we can't change the value of variable (constant)
+2. Methods - we can't override those methods in child classes.
+3. Class -we can't extend the class.
 
 Super 
 -----
-Super keyword will be used to invoke the immediate parent class variable.
-Super keyword will be used to invoke the immediate parent class method.
+1. Super keyword will be used to invoke the immediate parent class variable.
+2. Super keyword will be used to invoke the immediate parent class method.
+
+
 
 Day 16
 ------
-Data Abstraction
+Data Abstraction (Hidden)
 ---------
 Abstraction is a process of hiding the implementation details and showing only functionality to the user.
 
-Abstract class
-Interface
-
-
+1. Abstract class
+2. Interface
 
 
 Interface
 -----
-An interface is a blue print of class
-Interface contains final and static variables.
-Interface contains abstract methods ( also allowed default and static methods from java8 onwards)
-An abstract method is a method contains signature but not body ( un implemented method)
-Methods in the interface are public.
-Interface supports the functionality of multiple inheritance.
-We can define an interface with an interface keyword.
-A class extends another class, an interface extends another interface but a class implements an interface.
-We can create object references for the interface but we can instantiate the interface.
+1. An interface is a blue print of class
+2. Interface contains final and static variables.
+3. Interface contains abstract methods ( also allowed default and static methods from java8 onwards)
+4. An abstract method is a method contains signature but not body ( un implemented method)
+5. Methods in the interface are public.
+6. Interface supports the functionality of multiple inheritance.
+7. We can define an interface with an interface keyword.
+8. A class extends another class, an interface extends another interface but a class implements an interface.
+9. We can create object references for the interface but we can instantiate the interface.
 
 class Test
 {
