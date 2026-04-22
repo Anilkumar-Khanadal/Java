@@ -770,6 +770,7 @@ Day 17
 Wrapper classes
 —--------------
 (Data conversion) only primitive type
+
 int - Integer
 float - Float
 double - Double
@@ -783,28 +784,32 @@ String price2 =”200.50”;
 
 Add price1 and price2, as a string its not possible
 
-Scenario 1 -  String – > int, double, boolean, char
+Scenario 1 -  String – > int, double, boolean
 Scenario 2  –  int, double, boolean, char — > String
 
-String —> int                  Integer.parseInt (String value)
+String —> int             Integer.parseInt (String value)
 String —> double           Double.parseInt (String value)
 String —> boolean         Boolean.parseInt (String value)
 String —> char                Not possible
 
 Any data type — > string 
 String.valueOf( ) - convert all primitive data type into string formate
-Packages and Access modifiers
-------------
 
-Built in package - Ex util package
+
+Packages and Access modifiers
+
+Built in package - Ex : java.util.Arrays
 User - define package
+
 
 Access modifiers - defines scope of variable and methods
 --------
-public - directly access all variables and methods anywhere
-protected - outside of the package only through inheritance (import package)
-default - only within the package	
-private - access only within the class
+1. public    - Directly access all variables and methods anywhere
+2. protected - Outside of the package only through inheritance (import package)
+3. default   - Only within the package	
+4. private   - access only within the class
+
+
 
 Day 18
 ------
@@ -813,23 +818,60 @@ Exception handling
 Exception is an event which will cause program termination.
 
 Errors
-—
-Syntax
-Logical
+—----
+1. Syntax
+2. Logical
 
 Types of exceptions
 -------------
-Checked exceptions
+1. Checked exceptions
+
 The exceptions which one identifies by java compiler.
-Ex : InterruptedException
-        FileNotFound
+Ex : 
+        InterruptedException
+        FileNotFoundException
         IOException etc……
-Un-Checked exceptions
+        
+2. Un-Checked exceptions
+
 The exceptions which are not identified by java compiler
-Ex : ArithmeticException
+Ex :    
+        ArithmeticException
         NullPointerException
         ArrayIndexOutOfBoundsException etc…
+        
+try
+{
+statement
+}
+catch (ArithmeticException e)
+{
+statement
+}
 
+
+
+try
+{
+statement
+}
+catch (ArithmeticException e)
+{
+statement
+}
+finally
+{
+Statement
+}
+
+Case 1: Exeption occured, catch block handled --> finaly block will be execute.
+Case 2: Exeption occured, catch block NOT handled --> finaly block will be execute.
+Case 3: Exeption dous not occured, catch block ignored --> finaly block will be execute.
+
+Checked exceptions can be handled in 2 ways
+-------------
+Using try.........catch 
+throws
 
 
 
@@ -848,26 +890,28 @@ Child c = new Child( );
 Parent p = new Child( );
 
 
+
+
 Day 20
 ------
 Collection
-—-----------
+—---------
 
-                          Collection (I)                                                                 Map (I)
-                           /            \                                                                   |
-                        /                 \                                                                 |
-                      /                     \                                                               |
-          List (I)                       Set (I)                                                          HashMap ( C )
-              |                              |                                                      Example
-              |                              |                                                          Key  :  value
-              |                              |                                                            id : name
-     ArrayList ( C )                     HashSet ( C )
+                        Collection(I)                          Map(I)
+                         /        \                              |
+                        /          \                             |
+                       /            \                            |
+                List(I)              Set(I)                   HashMap(C)
+                   |                    |                  Example - Key  :  value
+                   |                    |                              id : name
+                   |                    | 
+              ArrayList(C)          HashSet(C)
 
 Collection - To represent group of element / objects / data into single entity
 “Collection” is an interface available in java.util class
 
 ArrayList - is class which is implemented list interface
-—-----------------------------------------------------------------
+—----------------------------------------------------
 1. Heteronious data - allowed
 2. Insertion order - preserved (Index)
 3. Duplicate elements - allowed
