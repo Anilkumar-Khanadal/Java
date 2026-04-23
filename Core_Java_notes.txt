@@ -664,26 +664,24 @@ Class
 
 Hierarchy Inheritance
 ------
-                       Class
-                  /      |      \
-                 /       |       \
-            Class      Class      Class
+                   Class
+                  /  |  \
+                 /   |   \
+            Class  Class  Class
             
 
 Multiple (Class Not supported Multiple Inheritance)
 -----
-Interface          Interface          Interface 
-      \                 |                 /
-        \               |               /
-          \             |             /
-            \           |           /
-              \         |         /
-                \       |       /
-                  \     |     /
-                    \   |   /
-                      \ | /
-                        |
-                     Interface 
+Interface    Interface    Interface 
+         \       |       /
+          \      |      /
+           \     |     /
+            \    |    /
+             \   |   /
+              \  |  /
+               \ | /
+                \|/
+             Interface 
 
 
 
@@ -884,10 +882,29 @@ Converting type of data.
 Types
 —---
 Upcasting / widening
+    - Converting value frop Smaller to Larger
+      int to long
+      float to double
+      
 Downcasting / Narrowing
+    - Converting value frop Larger to Smaller
+      long to int
+      double to float
 
-Child c = new Child( );
-Parent p = new Child( );
+Child c = new Child();
+Parent p = new Child();
+
+A
+|
+B
+|
+C
+
+A a = new A(); // correct Upcasting
+A a = new B(); // correct Upcasting
+A a = new C(); // correct Upcasting
+
+B b=(B) new A(); // corrct downcasting
 
 
 
@@ -897,21 +914,26 @@ Day 20
 Collection
 —---------
 
-                        Collection(I)                          Map(I)
-                         /        \                              |
-                        /          \                             |
-                       /            \                            |
-                List(I)              Set(I)                   HashMap(C)
-                   |                    |                  Example - Key  :  value
-                   |                    |                              id : name
-                   |                    | 
-              ArrayList(C)          HashSet(C)
+          Collection(I)                          Map(I)
+           /        \                              |
+          /          \                             |
+         /            \                            |
+  List(I)              Set(I)                   HashMap(C)
+     |                    |                  Example - Key  :  value
+     |                    |                              id : name
+     |                    | 
+ ArrayList(C)          HashSet(C)
 
-Collection - To represent group of element / objects / data into single entity
-“Collection” is an interface available in java.util class
 
-ArrayList - is class which is implemented list interface
-—----------------------------------------------------
+Collection 
+      - To represent group of element / objects / data into single entity
+        “Collection” is an interface available in java.util class
+
+
+ArrayList
+—--------
+- ArrayList is class which is implemented list interface.
+
 1. Heteronious data - allowed
 2. Insertion order - preserved (Index)
 3. Duplicate elements - allowed
@@ -940,7 +962,7 @@ HashSet - a class implemented Set interface
 
 HashMap - a class implemented Map interface 
 -----------
-1. Data can be stored in the form of key : Value pairs.
+1. Data can be stored in the form of (key : Value) pairs.
 2. key is unique. But we can have duplicate values.
 3. Insertion order not preserved (Index not allowed)
 
