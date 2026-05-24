@@ -12,7 +12,7 @@ public class SingleDimensionalArray {
    public static void main(String[] args) {
 
 // Declaring array
-	//Approach
+	//Approach 1
 
 	   /*  int a[]=new int[5];
 	   a[0]=100;
@@ -22,7 +22,7 @@ public class SingleDimensionalArray {
 	   a[4]=500;
 	   */
 
-	//Approach
+	//Approach 2
 
         int a[]= {100,200,300,400,500};
 

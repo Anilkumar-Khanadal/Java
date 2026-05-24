@@ -8,8 +8,14 @@ public class FindDuplicateNumber {
 		int num = 100;
 		int count = 0;
 
-		for (int value : a) {
+	/*	for (int value : a) {
 			if (value == num) {
+				count++;
+			}
+		} */
+
+		for (int i = 0; i <= a.length - 1; i++) {
+			if (a[i] == num) {
 				count++;
 			}
 		}

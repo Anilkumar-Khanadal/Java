@@ -25,6 +25,6 @@ public class TernaryOperators {
 		// Ex 3
 		int person_age=30;
 		String res=(person_age>=18)? "Eligible" : "Not-Eligible";
-		System.out.println(res);
+		System.out.println(res); // Eligible
 	}
 }

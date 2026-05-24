@@ -5,10 +5,6 @@ package day4;
 //num=0 Zero
 public class PositiveOrNegativeNumber {
 
-	// num>0 positive
-	// num<0 Negative
-	// num=0 Zero
-
 	public static void main(String[] args) {
 
 		int num = -200;

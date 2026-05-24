@@ -39,8 +39,5 @@ public class DataTypeDemo {
 //		boolean bl="true"; // not valid
 		boolean b2=true; // allows only true/false
 		System.out.println(b2);
-
-
-
 	}
 }

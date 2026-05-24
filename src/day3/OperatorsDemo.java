@@ -11,8 +11,8 @@ public class OperatorsDemo {
 		System.out.println("Sum of a and b : " + (a + b)); // 30
 		System.out.println("Diff of a and b : " + (a - b)); // 10
 		System.out.println("Multiplication of a and b : " + (a * b)); // 200
-		System.out.println("Division of a and b : " + (a / b)); // 2 Qutionts
-		System.out.println("Modulo division of a and b : " + (a % b)); // 0 Remider
+		System.out.println("Division of a and b : " + (a / b)); // 2 Quetionts
+		System.out.println("Modulo division of a and b : " + (a % b)); // 0 Reminder
 
 		// 2) Relational/comparison operators > >= < <= != ==
 		// It return boolean value
@@ -23,10 +23,10 @@ public class OperatorsDemo {
 		System.out.println(a >= b); // true
 		System.out.println(a <= b); // false
 		b = 20;
-		System.out.println(a <= b); // true b=20 chamged
-		System.out.println(a >= b); // true b=20 chamged
-		System.out.println(a != b); // false b=20 chamged
-		System.out.println(a == b); // true b=20 chamged
+		System.out.println(a <= b); // true b=20 changed
+		System.out.println(a >= b); // true b=20 changed
+		System.out.println(a != b); // false b=20 changed
+		System.out.println(a == b); // true b=20 changed
 
 		boolean res = a > b;
 		System.out.println(res); // false
@@ -52,6 +52,6 @@ public class OperatorsDemo {
 		System.out.println(b1 && b2); // false
 		System.out.println(b1 || b2); // true
 
-		System.out.println((10 < 20) && (20 > 10));
+		System.out.println((10 < 20) && (20 > 10)); //false
 	}
 }

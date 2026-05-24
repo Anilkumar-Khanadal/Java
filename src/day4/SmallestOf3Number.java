@@ -10,21 +10,16 @@ public class SmallestOf3Number {
 
 	public static void main(String[] args) {
 
-        int a=40, b=50, c=30;
+		int a = 40, b = 50, c = 30;
 
      // Approach 1
 
-        if(a<b && a<c)
-		{
-			System.out.println("a is a smallest number : "+a);
-		}
-		else if(b<a && b<c)
-		{
-			System.out.println("b is a smallest number : "+b);
-		}
-		else
-		{
-			System.out.println("c is a smallest number : "+c);
+		if (a < b && a < c) {
+			System.out.println("a is a smallest number : " + a);
+		} else if (b < a && b < c) {
+			System.out.println("b is a smallest number : " + b);
+		} else {
+			System.out.println("c is a smallest number : " + c);
 		}
 
 

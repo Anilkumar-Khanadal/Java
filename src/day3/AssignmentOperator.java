@@ -4,7 +4,7 @@ public class AssignmentOperator {
 
 	public static void main(String[] args) {
 
-	//	5) Assignment = += -+= *= /= %=
+	//	5) Assignment = += -= *= /= %=
 
 		int a=10;
 	/*	a+=5;   // a=a+5;
