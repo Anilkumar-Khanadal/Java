@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class BubbleSort {
 	public static void main(String[] args) {
-		int a[]= {4,5,2,1,3};
+		int a[]= {4,5,2,1,3,0,9};
 
 // Approach 1
 		System.out.println("Array Before Sortig : "+Arrays.toString(a));
@@ -16,7 +16,11 @@ public class BubbleSort {
 		{
 			for(int j=0; j<n-1; j++)
 			{
-				if(a[j]<a[j+1])
+				if(a[j]>a[j+1]) // i=0  4521309 / 4251309 / 4215309 /4213509 / 4213059
+					            // i=1  2413059 / 2143059 / 2134059 / 2130459 
+					            // i=2  1230459 / 1203459
+					            // i=3  1023459
+					            // i=4  0123459
 				{
 					int temp=a[j];
 					a[j]=a[j+1];

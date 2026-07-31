@@ -758,8 +758,6 @@ Variable  ( final & Static or by default )
 methods
 }
 
-
-
 OOPS
 ----
 Class
@@ -768,8 +766,6 @@ Polymorphism  - Overloading
 Encapsulation - Setters & Getters
 Inheritance - Overriding
 Data abstraction - Interface, abstract class
-
-
 
 
 Day 17
@@ -795,8 +791,8 @@ Scenario 1 -  String – > int, double, boolean
 Scenario 2  –  int, double, boolean, char — > String
 
 String —> int             Integer.parseInt (String value)
-String —> double           Double.parseInt (String value)
-String —> boolean         Boolean.parseInt (String value)
+String —> double           Double.parseDouble (String value)
+String —> boolean         Boolean.parseBoolean (String value)
 String —> char                Not possible
 
 Any data type — > string 
@@ -858,7 +854,7 @@ statement
 
 
 
-try
+try 
 {
 statement
 }
@@ -891,12 +887,12 @@ Converting type of data.
 Types
 -----
 Upcasting / widening
-    - Converting value frop Smaller to Larger
+    - Converting value from Smaller to Larger
       int to long
       float to double
       
 Downcasting / Narrowing
-    - Converting value frop Larger to Smaller
+    - Converting value from Larger to Smaller
       long to int
       double to float
 
@@ -913,7 +909,7 @@ A a = new A(); // correct Upcasting
 A a = new B(); // correct Upcasting
 A a = new C(); // correct Upcasting
 
-B b=(B) new A(); // corrct downcasting
+B b=(B) new A(); // correct downcasting
 
 
 
@@ -981,6 +977,9 @@ HashMap - a class implemented Map interface
 
 
 Automation Testing
+------------------
+
+
 Day 21
 ------
 Selenium WebDriver
@@ -991,7 +990,7 @@ Webdriver is one of the component in selenium
 Webdriver is a Java Interface
 WebDriver is an API (Application Programming Interface)
 
-WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver……
+WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver____
 
 Environment SetUp
 -----------------
@@ -1002,12 +1001,11 @@ Attach jars to Java project
 Selenium Jar file
 Stable: 4.35.0 (August 12, 2025)
 
-Create Maven Project (Recommended)
+Create Maven Project (Recommended)410
 Created a new Maven Project n eclipse
 Added webdriver dependencies in pom.xml and Updated.
 pom.xml  dependencies
 https://mvnrepository.com/
-
 
 
 Day 22
@@ -1018,33 +1016,35 @@ id
 Name
 Linktext
 PartialLinktext
-Class Name  (group of element)
-TagName (group of element)
+Class Name - (group of element)
+TagName - (group of element)
+
 CSS Selector (Customised Locators)
 Tag  and ID
 Tag and Class
 Tag and attribute
 Tag, class and attribute
+
 XPath (Customised Locators)
 Absolute Xpath
 Relative XPath
 
 driver.findElement(By.id( ))
 
-findElement( ) – single webElement
+findElement( )  – single webElement
 findElements( ) – multiple webElements
 
 Scenario1 : Locator matching with single webElement
-findElement(loc) — > single web Element    webElement
-findElements(loc) — > single web Element   List < webElement>
+findElement(loc)  — single web Element    webElement
+findElements(loc) — single web Element   List < webElement>
 
 Scenario2 : Locator matching with multi webElements
-findElement(loc) — > single web Element    webElement
-findElements(loc) — > single web Element   List < webElement>
+findElement(loc)  — single web Element    webElement
+findElements(loc) — single web Element   List < webElement>
 
 Scenario1 : Locator is not matching any elements
-findElement(loc) — > No Such Element Exception
-findElements(loc) — > will not throw any exception, Return 0
+findElement(loc) — No Such Element Exception
+findElements(loc) — will not throw any exception, Return 0
 
 Day 23
 ------
@@ -1070,6 +1070,7 @@ DOM - Document Object Model
 ----------------
 Absolute XPath (Full XPath)
 /html/body/header/div/div/div[2]/div/input
+
 Relative XPath (Partial XPath)
 //*[@id="search"]/input
 
@@ -1078,25 +1079,29 @@ Relative xpath.
 
 
 Difference between Absolute and Relative xpaths?
-Absolute xpath starts with / ------ > represents root node
-Relative xpath stats with //
-Absolute xpath do not use attributes
-Relative xpath works with attributes.
-Absolute xpath traverse through each node till it finds element
-Relative xpath directly jumps and finds the element by using attributes.
+---------
+1. Absolute xpath starts with / ------ > represents root node
+   Relative xpath stats with //
+   
+2. Absolute xpath do not use attributes
+   Relative xpath works with attributes.
+   
+3. Absolute xpath traverse through each node till it finds element
+   Relative xpath directly jumps and finds the element by using attributes.
 
 Relative xpath
 --------------
 Automatically - Devtools, selectorshub
-Manually (own xpath)
+Manually (Own xpath)
 
 Symbol
 ------
 //tagname[@attribute=”value”]
+//input[@attribute=”value”]
 //*[@attribute=”value”]
 
 Example : 
-//img[@title=’MacBook’]  or //img[@title=’MacBook”]
+//img[@title=’MacBook’]  or //img[@title=/"MacBook”/]
 
 xpath with single attributes		
 driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-shirts");
@@ -1104,11 +1109,14 @@ driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-shirt
 xpath with multiple attributes	 driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("T-shirts");
 
 xpath with ‘and’ ‘or’ attributes
+--------------------------------
 driver.findElement(By.xpath("//input[@placeholder='Search' and @name='search']")).sendKeys("T-shirts");
 driver.findElement(By.xpath("//input[@placeholder='Search' or @name='search']")).sendKeys("T-shirts");
-xpath with inner text - text( )
-//a[text ( ) = ‘Desktps’]
-//a[text ( ) = ‘MacBook’]
+
+xpath with inner text - text()
+------------------------------
+//a[text() = ‘Desktps’]
+//a[text() = ‘MacBook’]
 
 <a href=”https://xyz.com”> Click Me </a>
 Linktext = Yes
@@ -1124,7 +1132,7 @@ xpath with contains()
 
 Handling dynamic attributes
 ---------------------------
-//*[@id=’statr’ or @id=’stop’]
+//*[@id=’start’ or @id=’stop’]
 //*[contains(@id,’st’)]
 //*[starts-with(@id,’st’)]
 
@@ -1164,6 +1172,9 @@ Preceding-sibling
 
 Day 26
 ------
+
+Web driver methods/commands
+---------------------------
 Get methods
 Conditional methods
 Browser methods
@@ -1182,11 +1193,10 @@ getWindowHandles ( ) - returns ID’s of the multiple Browser windows
 Conditional methods - access these commands through webElement
 --------------------------------------------------------------
 Returns boolean value (ture/false)
+
 isDisplayed ( ) - we can check display status of the element
 isEnabled ( ) - we can check enable/disable status of the element/operational element
 isSelected ( ) - we can use to check the element is selected or not
-
-
 
 
 Browser methods
@@ -1205,9 +1215,11 @@ Day 27
 Wait commands
 -------------
 Synchronization
-Thread.sleep ( );
-Implicit wait
-Explicit wait/fluent wait
+
+Thread.sleep();   // by default java provide
+
+1. Implicit wait
+2. Explicit wait/fluent wait
 
 NoSuchElementException - Element is not present on the page Synchronization
 ElementNotFoundException - Locator is in-correct
@@ -1252,18 +1264,39 @@ It will wait for condition to be true, then consider the time
 We need to write multiple statements for multiple elements.
 
 
+Fluent wait 
+-----------
+declaration
+
+			Wait<WebDriver> mywait=new FluentWait<WebDriver>(driver)
+					.withTimeout(Duration.ofSeconds(10))
+					.pollingEvery(Duration.ofSeconds(2))
+					.ignoring(NoSuchElementException.class);
+							
+			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			driver.manage().window().maximize();
+			
+useg
+
+			WebElement txtusername = mywait.until(new Function<WebDriver, WebElement>() {
+				public WebElement apply(WebDriver driver) {
+				return driver.findElement(By.xpath("//input[@placeholder='Username']"));
+				}
+				});
+
 Day 28
 ------
 Navigational commands
 ---------------------
 
-navigate ( ).to(url)
-navigate ( ).back( )
-navigate ( ).forword( )
-navigate ( ).refresh( )
+driver.navigate ( ).to(url)
+driver.navigate ( ).back( )
+driver.navigate ( ).forword( )
+driver.navigate ( ).refresh( )
 
 driver.get() --> accepts URL in string formate only
 driver.navigate().to() --> accepts URL in the string formate & URL object formate.
+                           internally it will cal get method
 
 
 getWindowHandle()
@@ -1281,7 +1314,7 @@ Alerts/popups
 driver.switchTo().alert().accept()
 driver.switchTo().alert().dismiss()
 driver.switchTo().alert().getText()
-driver.switchTo().alert().sendKeys(text)
+driver.switchTo().alert().sendKeys("text")
 
 or
 
@@ -1290,14 +1323,32 @@ Alert myalert = driver.switchTo().alert();
 myalert.accept()
 myalert.dismiss()
 myalert.getText()
-myalert.sendKeys(text)
+myalert.sendKeys("text")
 
 Authenticated popup
 
 http://the-internet.herokuapp.com/basic_auth
 http://username:password@the-internet.herokuapp.com/basic_auth
 
+Handle alert without using switchTo().alert();
+By using explicit wait method
+----------------------------------------------
 
+        WebDriver driver=new ChromeDriver();
+		WebDriverWait mywait=new WebDriverWait(driver, Duration.ofSeconds(10)); //explicit wait declaration
+		
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
+		Thread.sleep(5000);
+		
+		Alert myalrt = mywait.until(ExpectedConditions.alertIsPresent()); // capture alert
+		
+		System.out.println(myalrt.getText()); // I am a JS Alert
+		myalrt.accept(); //click on Ok button.
+		
+		
 
 Day 30
 ------
@@ -1308,7 +1359,7 @@ driver.switcTo.frame(id)
 driver.switcTo.frame(WebElement)
 driver.switcTo.frame(index)
 
-driver.switcTo.defaultContent()
+driver.switcTo.defaultContent() // go back to default page
 
 
 3 types of switching methods
@@ -1326,6 +1377,8 @@ driver.switcTo.defaultContent()
      driver.switchTo.frame(id);
      driver.switchTo.frame(name);
      driver.switchTo.frame(WebElement);
+     
+     
 
 Day 31
 ------
@@ -1394,7 +1447,7 @@ getText() Vs getAttribute(attribute)
 <input id="xyz"> welcome </input>
 
 getText() --> returns the inner text --> welcome
-getAttribute("id") --> returns the value of attributes --> xyz
+getAttribute("id") --> returns the value of id attributes --> xyz
 
 <input value="welcome"></input>
 getAttribute('value" --> welcome
@@ -1414,24 +1467,126 @@ Day 36
 ------
 
 Slider
+------
+dragAndDropBy(Element, x, y)
+
+Keyboard Actions
+----------------
+keyDown()
+keyUp()
+
+Ex : Ctrl+Shift+A
+act.KeyDown(Keys.CONTOL).KeyDown(Keys.SHIFT).sendKeys("A").KeysUp(Keys.SHIFT).KeysUp(Keys.CONTROL).perform();
+
+Ex : Enter
+act.KeyDown(Keys.ENTER).KeysUp(Keys.ENTER).perform();
+
+OpenLinkInNewTab
+
+TabsAndWindows
 
 
 Day 37
 ------
 
+                         ┌─────────────────────┐
+                         │     [Interface]     │
+                         │    SearchContext    │
+                         └─────────────────────┘
+                                    ▲
+                                    │ extends
+                                    │
+                         ┌─────────────────────┐
+                         │     [Interface]     │
+                         │      WebDriver      │
+                         └─────────────────────┘
+                                    ▲
+                                    │ implements
+                                    │
+                         ┌─────────────────────┐
+                         │       [Class]       │
+                         │   RemoteWebDriver   │
+                         └─────────────────────┘
+                           ▲                 ▲
+                           │                 │
+              implements   │                 │   implements
+                           │                 │
+        ┌──────────────────┘                 └──────────────────┐
+        │                                                       │
+┌─────────────────────┐                               ┌─────────────────────┐
+│     [Interface]     │                               │     [Interface]     │
+│ JavaScriptExecutor  │                               │   TakesScreenshot   │
+└─────────────────────┘                               └─────────────────────┘
+
+
+                                    ▲
+                                    │ extends
+                                    │
+        ┌───────────────────────────┼───────────────────────────┐
+        │                           │                           │
+        │                           │                           │
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│    [Class]      │       │    [Class]      │       │    [Class]      │
+│InternetExplorer │       │ FirefoxDriver   │       │ ChromiumDriver  │
+│     Driver      │       │                 │       │                 │
+└─────────────────┘       └─────────────────┘       └─────────────────┘
+                                                               ▲
+                                                               │ extends
+                                               ┌───────────────┴───────────────┐
+                                               │                               │
+                                     ┌─────────────────┐             ┌─────────────────┐
+                                     │    [Class]      │             │    [Class]      │
+                                     │  ChromeDriver   │             │   EdgeDriver    │
+                                     └─────────────────┘             └─────────────────┘
+
+
+┌─────────────────┐                                    ┌─────────────────┐
+│    [Class]      │                                    │    [Class]      │
+│   OperaDriver   │                                    │   SafariDriver  │
+└─────────────────┘                                    └─────────────────┘
+         │                                                     │
+         │ extends                                             │ extends
+         ▼                                                     ▼
+   ChromiumDriver                                       RemoteWebDriver
+   
+
+Correct relationship direction:
+
+WebDriver extends SearchContext
+RemoteWebDriver implements WebDriver
+RemoteWebDriver implements JavaScriptExecutor
+RemoteWebDriver implements TakesScreenshot
+InternetExplorerDriver extends RemoteWebDriver
+FirefoxDriver extends RemoteWebDriver
+ChromiumDriver extends RemoteWebDriver
+ChromeDriver extends ChromiumDriver
+EdgeDriver extends ChromiumDriver
+OperaDriver extends ChromiumDriver
+SafariDriver extends RemoteWebDriver      
+
 JavaScriptExecutor
 ------------------
-
+JavaScriptExecutor - Interface
 executeScript() - we can execute javascript statements.
 
 sendKeys()
-click()
+click()   
 
+click() and sendKeys() are WebDriver methods used to interact with web elements. Normally, these methods 
+work through the browser’s native automation mechanism. However, sometimes direct click() or sendKeys() 
+may not work because the element is hidden, overlapped, not interactable, or affected by dynamic UI behavior. 
+In such cases, we can use JavaScriptExecutor to perform the action using JavaScript.
 
-Scrolling bar
+Note: click() and sendKeys() do not internally call JavaScriptExecutor. JavaScriptExecutor is an 
+      alternative approach when normal WebDriver actions fail.
+
+ScrollingPage
 -------------
 
-Upload files
+ZoomInZoomOut
+-------------
+
+Upload files (Single and Multiple)
 ------------
 
 Day 38 
@@ -1447,48 +1602,37 @@ EdgeOptions
 FirefoxOptions
 etc....
 
-
 ChromeOptions
 -------------
-1. Headless testing
+1. Headless testing          ChromeOptions options=new ChromeOptions();
+                             options.addArguments(("--headless=new");
+                             Advantages
+                             ----------
+                             * we can do multiple tasks( since execution happed backend)
+                             * faster execution
 
-ChromeOptions options=new ChromeOptions();
-options.addArguments(("--headless=new");
+                             Disadvantages
+                             -------------
+                             * user cannot see the actions on the page. so he cannot understand 
+                               flow/functionality of the test.
+2. ChromeMaximize            ChromeOptions options = new ChromeOptions();
+		                     options.addArguments("--start-maximized");
+3. IncognitoMode             ChromeOptions options = new ChromeOptions();
+		                     options.addArguments("--incognito");
+4. DisableNotifications
+5. DisableAutomatedMessageOnScreen
+                             ChromeOptions options = new ChromeOptions();
+                             options.setExperimentalOption("excludeSwithches", new String[] {"enable-automation"});
 
-advantages
-----------
-1. we can do multiple tasks( since execution happed backend)
-2. faster execution
+6. SSL Handling              ChromeOptions options = new ChromeOptions();
+                             options.setAcceptInsecureCerts(true); // accepts SSL certifications
 
-disadvantages
--------------
-1. user cannot see the actions on the page. so he cannot understand 
-   flow/functionality of the test.
-
-SSL Handling
-------------
-ChromeOptions options = new ChromeOptions();
-options.setAcceptInsecureCerts(true); // accepts SSL certifications
-
-
-to remove "Chrome is being controlled by automated test software"
----------------------
-ChromeOptions options = new ChromeOptions();
-options.setExperimentalOption("excludeSwithches", new String[] {"enable-automation"});
-
-
-to run the tests in Incognito mode
-----------------------------------
-ChromeOptions options = new ChromeOptions();
-options.addArguments("--incognito");
-
-
-Enable extensions in browser
+7. Enable extensions in browser
 ----------------------------
-step 1 : Add CRX Extractor/Downloader to chrome Browser (manually)
-step 2 : Add SelectorHub plugin to chrome browser (manually)
-step 3 : Capture CRX file for selectorHUb extension
-step 4 : Pass CRX file path in automation script in chrome Options.
+                             step 1 : Add CRX Extractor/Downloader to chrome Browser (manually)
+                             step 2 : Add SelectorHub plugin to chrome browser (manually)
+                             step 3 : Capture CRX file for selectorHUb extension
+                             step 4 : Pass CRX file path in automation script in chrome Options.
 
 
 Day 39
@@ -1505,24 +1649,63 @@ Broken Links
 
 Shadow DOM
 ----------
+XPath cannot handle shadow dom elements.
+Only CSS can handle shadow dom elements.
 
+Shadow host
+       |
+       Shadow root
+                 |
+                 Element
+                       |
+                       Shadow host   (Nested)
+                                 |
+                                 Shadow root
+                                           |
+                                           Element
+                                                  |
+                                                  Shadow host(Multi Nested)
+                                                            |
+                                                            Shadow root
+                                                                      |
+                                                                      Element
+                                                                                           
+
+HandleSVGelements
+-----------------
 
 Day 40
 ------
 Apache POI library
 
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+
 Excel File --> Workbook --> Sheets --> Rows --> Cells
 
 FileInputStream -- Reading
-FileOutputStream -- Writting
+FileOutputStream -- Writing
 
 XSSFWorkbook -- Workbook
 XSSFSheet  -- Sheer
 XSSFRow -- Row
 XSSFCell -- Cell
 
-1. Reading data from excel
-
+1. ReadingDataFromExcel
+2. WritingDataIntoExcel
+3. WritingDataInSpecificRowAndCell
+4. WritingDynamicDataIntoExcel
 
 Day 41
 ------
@@ -1534,6 +1717,7 @@ Data Driven testing
 3. develope automation script
 
 Reading properties file
+---------------------
 
 
 Day 42
@@ -1544,10 +1728,10 @@ java based unit testing tool.
 
 Advantages
 ----------
-1. Test cases & test suites
+1. Manage Test cases & test suites
 2. Grouping of test cases
 3. Prioritize
-4. Parameterization
+4. Parameterization (Parameter/Chrome/Edge...)
 5. Parallel testing
 6. Reports
 
@@ -1561,13 +1745,13 @@ TestNG Configuration
 1. TestNG execute test methods based on alphabetical order.
 2. @Test(priority=num) controls the order of execution.
 3. Once you provide priority to the test methods, then order of methods is not considered.
-4. Priorities can be random numbers (no need to have consecutive numbers)
+4. Priorities can be random numbers (no need to have consecutive numbers).
 5. If you don't provide priority then default value is zero (0).
 6. If the priorities are same then again execute methods in alphabetical order.
 7. Negative value are allowed in priority.
 8. TestNG execute test methods only if they are having @Test anootation.
 
-execute test cases  using testng xml file
+execute test cases  using testNG xml file
 
 test xml file
 -------------
@@ -1575,19 +1759,29 @@ test xml file
 2. manually
 
 Test suite --> Test cases --> test steps
+same in xml suite
 xml file --> classes --> Test methods
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">      // thread-count="5" - optional only needed for parallel test execution
+    <classes>
+      <class name="day420.FirstTestCase"/>
+      <class name="day420.OrangeHRMTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
 
 2 things achived throgh xml
 -------
 1. executed group of test cases as a 1 suite
-2. We can generate testng reports (default)
+2. We can generate testNG reports (default) 
+   // under folder test-output i. emailable-report.html ii.index.html
 
 
 Day 43
 ------
 Annotations
 -----------
-
 @Test
 
 @BeforeMethod
@@ -1596,28 +1790,51 @@ Annotations
 @BeforeClass
 @AfterClass
 
-@BeforeTest
+@BeforeTest           More than 1 class needed
 @AfterTest
 
-@BeforeSuite
+@BeforeSuite          More than 1 class needed
 @AfterSuite
 
 
-TC1
+TC1  - Login and Logout executing multiple time
 ---
-1. Login -- @BeforeMethod
+1. Login -- @BeforeMethod  (Before each test)
 2. Search -- @Test
-3. Logout -- @AfterMethod
+3. Logout -- @AfterMethod  (After each test)
 4. Login
 5. Adv Search -- @Test
 6. Logout
 
 TC2
 ---
-1. Login -- @BeforeClass
+1. Login -- @BeforeClass  (Before All test)
 2. Search -- @Test
 3. Adv Search -- @Test
-4. Logout -- @AfterClas
+4. Logout -- @AfterClas   (After All test)
+
+xml  
+---
+
+<suite name="Suite">                // @BeforeSuite
+
+  <test name="mytest1">             // @BeforeTest
+    <classes>
+      <class name="xyz"/>
+      <class name="abc"/>
+    </classes>
+  </test>                          // @AfterTest
+  
+    <test name="mytest2">          // @BeforeTest
+    <classes>  
+      <class name="xyz"/>
+      <class name="abc"/>
+    </classes>
+  </test>                          // @AfterTest
+  
+</suite>                           // @AfterSuite
+
+
 
 Assertion - Validation point
 
@@ -1625,6 +1842,23 @@ Assertion - Validation point
 ---------------------
 1. Hard assertions
 2. Soft assertions
+
+Hard Assertion
+--------------
+We can access from "Assert" class
+methods are static
+* if Hard assertion failed then rest of the statements will not be executed.
+
+Soft assertions
+---------------
+We can access throgh "SoftAssert" object
+
+SoftAssert sa=new SoftAssert();
+sa.assertTrue();
+
+* if soft assertion got failed then rest of the statements still execute.
+
+
 
 
 Day 44
@@ -1639,8 +1873,8 @@ logout
 
 dependsOnMethods = {"method name1", "method name2", ....}
 
-grouping
---------
+grouping (Trough only xml)
+--------------------------
 
 class1 - m1, m2, m3
 class2 - m4,m5, m6
@@ -1648,10 +1882,10 @@ class3 - m7, m8, m9
 
 sanity
 regression
-functional
+functional   (All)
 
+loginbyemail - sanity
 loginByfacebook - sanity
-loginby email - sanity
 loginby twitter - sanity
 
 signbyfacebook - regression
@@ -1679,7 +1913,8 @@ Day 45
 ------
 Parameterization
 ----------------
-1. @DataProvider
+1. @DataProvider - DataProvider alway returns Two dimentional array with Object.
+
 2. using xml file - parallel testing
 
 Parallel testing using xml file
@@ -1690,11 +1925,20 @@ step 3 : passed browser name, url as parameter from xml file to setup() method
 step 4 : execute test case on chrome, firebox & Edge (serial/sequcecial execution)
 step 5 : execute test case on chrome, firefox & edge (parallel execution)
 
+<suite name="Suite" parallel="tests">
+- All brouser execute at a time.
+- Without parallel="tests" all brouser execute sequcecial.
+
+
 Day 46
 ------
 
-TestNg Listners
+TestNG Listners
 ---------------
+                       Listner class (ITest Listners)
+testMethod1 - Pass    - Action
+testMethod2 - Failed  - Action
+testMethod3 - Skipped - Action
 
 1. create test case
 2. create listener class
@@ -1715,6 +1959,8 @@ class myListener extends TestListenerAdpter
 
 }
 
+Extent report - add deppendency
+
 
 Day 47
 ------
@@ -1725,11 +1971,11 @@ Page Object Model
 Test case
 ---------
 locators
-test methods - Code - validations+Actions
+test methods - Code - validations + Actions
 
 2 approaches to create page object classes
 ----
-1. without using PageFactory
+1. Without using PageFactory
 2. Using PageFactory
 
 
@@ -1749,37 +1995,57 @@ Objectives
 Types of Frameworks
 -------------------
 1. Buit-in
-        Ex : testng, jUnit, cucumber, robot etc...
+        Ex : testNG, jUnit, cucumber, robot etc...
 
-2. cutomized (user defgined)
+2. cutomized (user defined)
         modular framework, data driven, keywork driven, hybrid driven etc..
 
-Phases/Stages
+Framework Phases/Stages
 -------------
-1. Analysing AUT
+1. Analysing AUT (Application under test)
     - Number of Pages
-    - What ate all elements / how/tupe
+    - What are all elements/how/type
     - what to automate/ what we cannot automate
-
 2. choose test cases for automation
+       - 100 Test cases --- 90 automable 10 cannot automate
+       - 100 % automation
+       
+Choose testcases for automation
+   - Sanity test cases - P1
+   - Data driven test cases/re-tests - P2
+   - Regression test cases - P3
+   - Any other cases - P4
 
-100 Test cases --- 90 automable 10 cannot automate
-100 % automation
-
-1. Sanity test cases - P1
-2. Data driven test cases/re-tests - P2
-3. Regression test cases - P3
-4.  Any other cases - P4
-
-3. Design & Development pf Framework
-
+3. Design(flueprint) & Development of Framework
 4. Execution - local, remotely
-
 5. Maintence
+
+E - Commerce domain
+-------------------
+1. Frontend operations (Customers/Cliet)
+       - register an account
+       - login
+       - search for services(Flight/Hotel/Cab/Holiday)
+       - Services details for all pages result/Traveller/Booking/Confimation/Voucher/Email
+       - Booking services
+       - User dashboard
+       etc.....
+      
+2. Backend operations ( admins/backend teams)
+       - User management
+       - Reports
+       - Markups
+       - Discount
+       - CMS
+       - Promocode
+       - Tax
+       - API management
+       etc.....
 
 
 Day 49
 ------
+Project
 
 Day 50
 ------
@@ -1797,14 +2063,28 @@ Day 52
 ------
 Day 53
 ------
+Selenium Grid
+
 Day 54
 ------
 
 Docker - Containerazation
 
 https://hub.docker.com/search?q=&type=image
+Docker Hub - its a multiple image repositery
 
+Docker Hub
+       - Download Image / Node Image
+                   - Create Containerazation (Insatll image)
+                   
+Dowload Docker 
+https://docs.docker.com/desktop/setup/install/windows-install/
+Install
+
+open CMD and run                               
+                   
 docker version
+docker -compose version
 docker -v
 docker info
 docker --help
@@ -1815,15 +2095,15 @@ images commands
 ---------------
 docker images
 docker pull ubuntu
-docker rmi <image id>                (remove images)
+docker rmi image id                  (remove images)
 
 container commands
 ------------------
 docker ps                            (display running containers)
-docker run ubuntu                    or <<image name>> 
-docker start ubuntu                  or <<containner id>>
-docker stop ubuntu                   or <<containner id>>
-docker rm <<containner id/name>      remove
+docker run ubuntu                    or image name 
+docker start ubuntu                  or containner id
+docker stop ubuntu                   or containner id
+docker rm containner id/name         remove
 
 one image multiple containners
 
@@ -1840,7 +2120,15 @@ Automation need
 ------------
 docker pull selenium/hub
 docker pull selenium/node-chrome                   for linux
-docker pull se;enium/node-firefox
+docker pull selenium/node-firefox
+
+docker network create grid
+
+docker run -d -p 4442-4444:4442-4444 --net grid --name selenium-hub selenium/hub
+
+docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-chrome
+
+docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-firefox
 
 
 
@@ -1850,10 +2138,10 @@ Day 55
 pom.xml
 -------
 dependencies -- download required dependency jar for project
-plugins -- to compile and run the project
+plugins      -- Add to compile and run the project
 
-1. maven compiler plugin  // compile the code
-2. maven surefire plugin  // run the code
+1. maven compiler plugin     // compile the code
+2. maven surefire plugin     // run the code
 
 
 Execute/come out from exclipse and execute from cmd
@@ -1873,7 +2161,7 @@ currenct project location
 C:\Users\Dell\eclipse-workspace\yTravSuite
 
 dir
-mvn test             (pom.xml) executeby cmd
+mvn test             (pom.xml) execute by cmd
 
 
 CI/CD
@@ -1900,7 +2188,7 @@ Round1
 3. Adding files/folders  to staging/indexing
     git add -A      --> add all the files and folders to staging
     git add filename
-    git add *.jav
+    git add *.java
     git add foldername
 
 4. Commit the code into Local(git) repository
@@ -1935,7 +2223,6 @@ Day 56
 
 Jenkins
 -------
-
 https://github.com/pavanoltraining/OpencartV121.git
 https://github.com/Anilkumar-Khanadal/TravMove.git
 

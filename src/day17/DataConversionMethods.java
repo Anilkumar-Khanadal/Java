@@ -16,36 +16,33 @@ public class DataConversionMethods {
 		*/
 
 		//String --> double
-
 	/*	String s2="10.32";
 		String s3="20.56";
 		System.out.println(Double.parseDouble(s2)+Double.parseDouble(s3));
 		*/
 
 		//String --> boolean
-   /*	String s="true"; // other than true, false if you pass any string that will return
+    /*	String s="true"; // other than true, false if you pass any string that will return
 		boolean bool = Boolean.parseBoolean(s);
 		System.out.println(bool);
 		*/
 
 		// int,double,boolen,char --> String
-		int a=10;
-		double d=10.5;
-		char c='A';
-		boolean bool=true;
-
+		int a = 10;
+		double d = 10.5;
+		char c = 'A';
+		boolean bool = true;
 
 		String s = String.valueOf(a);
 		System.out.println(s);
 
-		String d1=String.valueOf(d);
+		String d1 = String.valueOf(d);
 		System.out.println(d1);
 
-		String c1=String.valueOf(c);
+		String c1 = String.valueOf(c);
 		System.out.println(c1);
 
-		String b1=String.valueOf(bool);
+		String b1 = String.valueOf(bool);
 		System.out.println(b1);
-
 	}
 }
