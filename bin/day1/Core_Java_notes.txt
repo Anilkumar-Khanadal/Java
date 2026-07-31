@@ -2196,6 +2196,7 @@ Round1
 
 5. Connect local repository with remote rep. (One time)
     git remote add origin "https://github.com/pavanoltraining/OpencartV121.git"
+    git remote add origin "https://github.com/Anilkumar-Khanadal/Java.git"
 
 6. push the code into remote repository
     git push origin master
@@ -2216,7 +2217,7 @@ git pull "https://github.com/pavanoltraining/OpencartV121.git"
 clone new repository to loacl system
 ------------------------------------
 git clone "https://github.com/pavanoltraining/testrepo.git"
-
+    
 
 Day 56
 ------
