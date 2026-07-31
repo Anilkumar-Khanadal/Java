@@ -990,7 +990,7 @@ Webdriver is one of the component in selenium
 Webdriver is a Java Interface
 WebDriver is an API (Application Programming Interface)
 
-WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver____
+WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver
 
 Environment SetUp
 -----------------

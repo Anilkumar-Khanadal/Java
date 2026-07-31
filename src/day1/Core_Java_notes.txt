@@ -990,7 +990,7 @@ Webdriver is one of the component in selenium
 Webdriver is a Java Interface
 WebDriver is an API (Application Programming Interface)
 
-WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver____
+WebDriver (I) — RemoteWebDriver (C ) → ChromeDriver, FirefoxDriver
 
 Environment SetUp
 -----------------
@@ -2227,4 +2227,40 @@ Jenkins
 https://github.com/pavanoltraining/OpencartV121.git
 https://github.com/Anilkumar-Khanadal/TravMove.git
 
---enable-future-java
+Manage jenkis > Plugins > after login jenkins check the installed plugins maven/git/github/......
+Manage jenkins > Tools > Set configuratin > JDK installation
+                                                  - Add JDK / set name and path
+                                            Git Installation
+                                                  - Add Git / set name and path
+                                            Maven Installation
+                                                  - Add Maven / set name and path
+
+Select "New Item"
+      - Given name (yTravSuite) 
+          - Selec "Maven Project" from the List
+               - Ok
+                    - Configuration page open General
+                         - Under "Source Code Management" select Git
+                                  and add GitHub Repository
+                                 - Umder "Build" section in Hoals and options add test
+                                     - Save and Apply
+                                     
+                                     After Adding in dashboard new entry will created Name : yTravSuite 
+                                     
+                                     Click On "Build Now" button
+                                       - Execution started
+                                          - It will git the project GitHub/pom.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
