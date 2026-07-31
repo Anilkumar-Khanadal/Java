@@ -1,4 +1,3 @@
-Anil
 Introduction 
 -----------
 1. Software testing is the process of finding defects in a software.
