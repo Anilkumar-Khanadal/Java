@@ -1013,13 +1013,13 @@ Day 22
 Locators
 --------
 (Single Element)
-id
-Name
-Linktext
-PartialLinktext
+id                 By.id("logo")
+Name               By.name("from")
+Linktext           By.linkText("Tablets")
+PartialLinktext    By.partialLinkText("Tab")
 
-Class Name - (group of element)
-TagName - (group of element)
+Class Name - (group of element)          By.className("list-inline-item")
+TagName - (group of element)             By.tagName("a")      or By.tagName("img")
 
 CSS Selector (Customised Locators)
 Tag  and ID
