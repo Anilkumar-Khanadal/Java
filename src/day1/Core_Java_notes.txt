@@ -1158,11 +1158,12 @@ Chained xpath (combination Relative and Absolute)
 
 
 
+
 Day 25
 ------
 Xpath axes
 ----------
-Self
+Self            
 Parent
 Child
 Ancestor
@@ -1171,6 +1172,19 @@ Following
 Preceding
 Following-sibling
 Preceding-sibling
+
+//div[@id='divUsername']/parent::input
+//div[@id='divUsername']/child::input
+//div[@id='divUsername']/ancestor::input
+//div[@id='divUsername']/child::input
+//form[@id='frmlogin']/descendant::input
+//input[@id='txtUsername']/following::input
+//input[@id='txtUsername']/following::input[first()]     or last()   or[2]
+//input[@id='txtUsername']/preceding::input
+//input[@id='txtUsername']/preceding::input[first()]     or last()   or[2]
+
+//*[@id='txtUsername']/following-sibling::span
+//*[@id='txtUsername']/preceding-sibling::span
 
 
 Day 26
