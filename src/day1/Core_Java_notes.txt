@@ -1108,7 +1108,8 @@ Example :
 xpath with single attributes		
 driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-shirts");
 	
-xpath with multiple attributes	 driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("T-shirts");
+xpath with multiple attributes	 
+driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("T-shirts");
 
 xpath with ‘and’ ‘or’ attributes
 --------------------------------
